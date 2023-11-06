@@ -1,0 +1,67 @@
+/* For Navbar Component */
+
+#navbar {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: 2px 2px 5px black;
+  font-size: 1.2rem;
+}
+
+#navbar .navbar-logo {
+  display: flex;
+  padding: 0 3rem;
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s
+    both;
+  animation: slide-left 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s both;
+}
+
+#navbar .navbar-nav {
+  display: flex;
+  flex: 1;
+}
+
+#navbar .navbar-list-left {
+  display: flex;
+  flex: 0 0 50%;
+  justify-content: space-between;
+}
+
+#navbar .navbar-list-right {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 0 1 50%;
+}
+
+#navbar .navbar-list-item {
+  list-style: none;
+}
+
+#navbar .navbar-link {
+  text-decoration: none;
+  color: var(--color);
+  /* background-color: var(--primarybtn); */
+}
+
+/* Animations */
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}

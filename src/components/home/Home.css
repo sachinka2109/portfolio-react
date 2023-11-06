@@ -1,0 +1,10 @@
+#home-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+  place-items: center;
+}
+
+#home-container .home-left {
+}
